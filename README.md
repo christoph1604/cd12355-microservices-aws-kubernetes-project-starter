@@ -1,9 +1,13 @@
 # Coworking Space Service Extension
 The Coworking Space Service is a set of APIs that enables users to request one-time tokens and administrators to authorize access to a coworking space. This service follows a microservice pattern and the APIs are split into distinct services that can be deployed and managed independently of one another.
 
-## Preliminary remark
+## Description
 This repository was originally created by Udacity.com and provided as starting point for project 03 ("Operationalizing a coworking space microservice") within the Udacity nanodegree "Cloud DevOps Engineer". In the original form, the application was intended for local execution.
 Final aim of the project was to fork the given repository, to convert the coding in a Docker-based microservice application and deploy it to a Kubernetes cluster with an automated CI/CD pipeline (based on AWS CodeBuild). 
+
+## General data
+Autor: Christoph Wagner
+Date of publication: 11/01/2025
 
 ## Dependencies
 ### Local Environment
