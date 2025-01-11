@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: service-postgresql-configmap
 data:
-  DB_HOST: "10.100.25.139"
+  DB_HOST: "10.100.64.99"
   DB_PORT: "5432"
   DB_USERNAME: myuser
   DB_NAME: mydatabase
