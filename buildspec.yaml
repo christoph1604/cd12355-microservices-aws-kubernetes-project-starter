@@ -7,12 +7,12 @@ phases:
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
       - echo "Setting version number"
       - VERSION_START="1.1."
-      - IMAGE_TAG="${VERSION_START} ${CODEBUILD_BUILD_NUMBER}"
+      - IMAGE_TAG="${VERSION_START}${CODEBUILD_BUILD_NUMBER}"
       - IMAGE_NAME="${IMAGE_NS}/${IMAGE_REPO_NAME}:${IMAGE_TAG}"
       - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
       - REPOSITORY_TAG="${REPOSITORY_URI}/${IMAGE_NAME}"
-      - echo "Image name ${IMAGE_NAME}"
-      - echo "Repository tag ${REPOSITORY_TAG}"
+      - echo "Image name: $IMAGE_NAME"
+      - echo "Repository tag: $REPOSITORY_TAG"
 
   build:
     commands:
