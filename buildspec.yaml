@@ -17,7 +17,7 @@ phases:
     commands:
       - echo Starting build at `date`
       - echo Building the Docker image...          
-      - docker build -t $IMAGE_NAME ./analytics --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg DB_USERNAME=$DB_USERNAME --no-cache
+      - docker build -t $IMAGE_NAME ./analytics --no-cache
       - docker tag $IMAGE_NAME $REPOSITORY_TAG  
 
   post_build:
